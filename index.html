@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu sistema</title>
+    <link rel="stylesheet" href="./icons.css" />
+    <script src="./script.js"></script>
+
+    <style>
+      body {
+        background-color: #3fbba3;
+      }
+
+      .container_login {
+        width: 40%;
+        background-color: #fff;
+        margin: 80px auto;
+        border-radius: 8px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .input {
+        height: 54px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+
+      .button_login {
+        width: 100px;
+        height: 44px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #0b847a;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .button_login:hover {
+        background-color: #10c4b5;
+        transform: scale(1.05);
+      }
+
+      .container_checkbox {
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_login">
+      <h1>Login</h1>
+
+      <input id="email" class="input" placeholder="Email" />
+
+      <input id="senha" type="password" class="input" placeholder="Senha" />
+
+      <div class="container_checkbox">
+        <input type="checkbox" id="exibir_senha" onclick="exibirSenha()" />
+        <label for="exibir_senha">Exibir senha</label>
+      </div>
+
+      <button class="button_login" onclick="realizarLogin()">Entrar</button>
+
+      <p>Ainda não tem Conta ? <a href="../sobre.html">Crie agora</a></p>
+
+      <!-- <i class="material-icons icon-medium icon-primary">lock</i> -->
+    </div>
+  </body>
+</html>
